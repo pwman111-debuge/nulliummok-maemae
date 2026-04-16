@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:finance.naver.com)",
+      "WebFetch(domain:polling.finance.naver.com)",
+      "WebFetch(domain:m.finance.naver.com)",
+      "WebFetch(domain:search.naver.com)",
+      "WebFetch(domain:m.search.naver.com)",
+      "WebFetch(domain:alphasquare.co.kr)",
+      "WebFetch(domain:n.news.naver.com)",
+      "WebFetch(domain:stock.naver.com)",
+      "WebFetch(domain:navercomp.wisereport.co.kr)",
+      "WebFetch(domain:comp.wisereport.co.kr)",
+      "WebFetch(domain:comp.fnguide.com)",
+      "WebFetch(domain:infostock.co.kr)",
+      "Bash(python:*)"
+    ]
+  }
+}

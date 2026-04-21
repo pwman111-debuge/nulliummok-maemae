@@ -1,6 +1,8 @@
-import urllib.request, re
+import urllib.request, re, os
 
 HEADERS = {'User-Agent': 'Mozilla/5.0','Accept-Language': 'ko-KR,ko;q=0.9','Referer': 'https://finance.naver.com/'}
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def fetch_data():
     results = []
@@ -45,7 +47,7 @@ def fetch_data():
     for code, name, price, volume in items[:10]:
         results.append(f"{name.strip()} ({code}) | Price: {price} | Volume: {volume}")
 
-    with open('.agent/scratch/stocks_data.txt', 'w', encoding='utf-8') as f:
+    with open(os.path.join(SCRIPT_DIR, 'stocks_data.txt'), 'w', encoding='utf-8') as f:
         f.write('\n'.join(results))
 
 fetch_data()

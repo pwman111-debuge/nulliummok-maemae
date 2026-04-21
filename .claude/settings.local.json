@@ -10,7 +10,27 @@
       "Bash(node -e ':*)",
       "Bash(curl -s -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/124.0.0.0 Safari/537.36\" -H \"Accept-Encoding: gzip, deflate, br\" -H \"Referer: https://finance.naver.com/\" -L \"https://finance.naver.com/sise/theme.naver\")",
       "WebFetch(domain:kr.investing.com)",
-      "WebSearch"
+      "WebSearch",
+      "Read(//c/Users/hwang/.claude/projects/C--Users-hwang-OneDrive-------------------/memory//**)",
+      "Read(//c/Users/hwang/.claude/projects/C--Users-hwang-OneDrive-------------------/memory/**)",
+      "Bash(python 중기유망종목/scripts/naver_finance.py screen 282)",
+      "Bash(python 중기유망종목/scripts/naver_finance.py all 082740)",
+      "Bash(python 중기유망종목/scripts/naver_finance.py investor 009150)",
+      "Bash(python 중기유망종목/scripts/naver_finance.py investor 012450)",
+      "Bash(python 중기유망종목/scripts/naver_finance.py sector)",
+      "Bash(python 중기유망종목/scripts/naver_finance.py screen 283)",
+      "Bash(python 중기유망종목/scripts/naver_finance.py all 000660)",
+      "Bash(python 중기유망종목/scripts/naver_finance.py all 267260)",
+      "Bash(python 중기유망종목/scripts/naver_finance.py all 010120)",
+      "Bash(mkdir -p \"C:\\\\Users\\\\hwang\\\\OneDrive\\\\바탕 화면\\\\클라우드코드-눌림목매매\\\\workflows\\\\.cache\")",
+      "Bash(echo \"012450 009540 034020 000660 005380 042660 329180\")",
+      "Bash(python -X utf8 skills/genesis-quant-skill/scripts/gene-scan.py --sector AI인프라 --top 20)",
+      "Bash(timeout 30 python -X utf8 skills/genesis-quant-skill/scripts/gene-scan.py --sector 반도체 --top 20)",
+      "Bash(python -X utf8 skills/genesis-quant-skill/scripts/gene-scan.py --tickers 000660 005930 267260 034020 012450 009540 042660)",
+      "Bash(python *)",
+      "Bash(where gh *)",
+      "Bash(git --version)",
+      "Bash(grep -n \"^\\\\s*<[0-9]\" content/market-insight/*.mdx)"
     ]
   }
 }

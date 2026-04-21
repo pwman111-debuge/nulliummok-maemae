@@ -1,0 +1,139 @@
+[
+  {
+    "code": "000660",
+    "name": "SK하이닉스",
+    "total": 67,
+    "grade": "B",
+    "eligible": true,
+    "pullback_pct": -3.84,
+    "pullback_days": 2,
+    "closest_ma": "5일선",
+    "closest_ma_dist_pct": 1.4,
+    "sma5": 1112400,
+    "sma20": 973500,
+    "sma60": 925833,
+    "current_price": 1128000,
+    "hit_52w_high": true,
+    "a_score": 35,
+    "b_score": 10,
+    "c_score": 22,
+    "vol_ratio": 63.16,
+    "rise_20d_pct": 45.53
+  },
+  {
+    "code": "005930",
+    "name": "삼성전자",
+    "total": 52,
+    "grade": "C",
+    "eligible": true,
+    "pullback_pct": -0.92,
+    "pullback_days": 0,
+    "closest_ma": "5일선",
+    "closest_ma_dist_pct": 2.66,
+    "sma5": 210400,
+    "sma20": 194230,
+    "sma60": 183593,
+    "current_price": 216000,
+    "hit_52w_high": false,
+    "a_score": 25,
+    "b_score": 10,
+    "c_score": 17,
+    "vol_ratio": 55.08,
+    "rise_20d_pct": 30.54
+  },
+  {
+    "code": "034020",
+    "name": "두산에너빌리티",
+    "total": 50,
+    "grade": "C",
+    "eligible": true,
+    "pullback_pct": -3.13,
+    "pullback_days": 1,
+    "closest_ma": "5일선",
+    "closest_ma_dist_pct": 3.83,
+    "sma5": 104500,
+    "sma20": 99635,
+    "sma60": 98047,
+    "current_price": 108500,
+    "hit_52w_high": true,
+    "a_score": 28,
+    "b_score": 5,
+    "c_score": 17,
+    "vol_ratio": 93.13,
+    "rise_20d_pct": 22.94
+  },
+  {
+    "code": "267260",
+    "name": "HD현대일렉트릭",
+    "total": 47,
+    "grade": "C",
+    "eligible": true,
+    "pullback_pct": -1.72,
+    "pullback_days": 0,
+    "closest_ma": "5일선",
+    "closest_ma_dist_pct": 2.74,
+    "sma5": 1058000,
+    "sma20": 955750,
+    "sma60": 947317,
+    "current_price": 1087000,
+    "hit_52w_high": false,
+    "a_score": 25,
+    "b_score": 5,
+    "c_score": 17,
+    "vol_ratio": 99.72,
+    "rise_20d_pct": 33.25
+  },
+  {
+    "code": "005380",
+    "name": "현대차",
+    "total": 0,
+    "grade": "✕",
+    "eligible": false,
+    "disqualified_reasons": [
+      "이평선 역배열 (20일 < 60일)"
+    ]
+  },
+  {
+    "code": "042660",
+    "name": "한화오션",
+    "total": 0,
+    "grade": "✕",
+    "eligible": false,
+    "disqualified_reasons": [
+      "이평선 역배열 (20일 < 60일)",
+      "거래량 급증 171% (투매 의심)"
+    ]
+  },
+  {
+    "code": "329180",
+    "name": "HD현대중공업",
+    "total": 0,
+    "grade": "✕",
+    "eligible": false,
+    "disqualified_reasons": [
+      "이평선 역배열 (20일 < 60일)",
+      "조정 기간 19일 (≥16)",
+      "거래량 급증 157% (투매 의심)"
+    ]
+  },
+  {
+    "code": "012450",
+    "name": "한화에어로스페이스",
+    "total": 0,
+    "grade": "✕",
+    "eligible": false,
+    "disqualified_reasons": [
+      "거래량 급증 125% (투매 의심)"
+    ]
+  },
+  {
+    "code": "009540",
+    "name": "HD한국조선해양",
+    "total": 0,
+    "grade": "✕",
+    "eligible": false,
+    "disqualified_reasons": [
+      "이평선 역배열 (20일 < 60일)"
+    ]
+  }
+]

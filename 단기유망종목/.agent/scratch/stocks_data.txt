@@ -1,46 +1,49 @@
-=== Foreign Buy Top (KOSPI) ===
-SK하이닉스 (000660) | Price: 525 | Amount: 612,982
-이수페타시스 (007660) | Price: 1,104 | Amount: 144,209
-두산에너빌리티 (034020) | Price: 950 | Amount: 107,147
-LIG디펜스앤에어로스페이스 (079550) | Price: 72 | Amount: 65,930
-현대건설 (000720) | Price: 303 | Amount: 53,270
-LG에너지솔루션 (373220) | Price: 103 | Amount: 44,270
-효성중공업 (298040) | Price: 8 | Amount: 24,479
-삼성전자우 (005935) | Price: 147 | Amount: 21,720
-LG화학 (051910) | Price: 53 | Amount: 19,360
-LG전자 (066570) | Price: 148 | Amount: 18,399
-=== Foreign Buy Top (KOSDAQ) ===
-주성엔지니어링 (036930) | Price: 1,090 | Amount: 95,322
-하나마이크론 (067310) | Price: 774 | Amount: 29,450
-에코프로 (086520) | Price: 185 | Amount: 28,835
-로보티즈 (108490) | Price: 93 | Amount: 26,858
-RFHIC (218410) | Price: 247 | Amount: 24,420
-알테오젠 (196170) | Price: 62 | Amount: 23,199
-리노공업 (058470) | Price: 117 | Amount: 13,508
-RF머트리얼즈 (327260) | Price: 121 | Amount: 13,075
-엠케이전자 (033160) | Price: 467 | Amount: 12,417
-이오테크닉스 (039030) | Price: 20 | Amount: 9,345
+[조회 기준일: 2026-04-22 / 당일(26.04.22) 컬럼 우선 파싱]
 
-=== Institution Buy Top (KOSPI) ===
-SK하이닉스 (000660) | Price: 105 | Amount: 122,413
-HD현대중공업 (329180) | Price: 127 | Amount: 66,889
-KODEX 레버리지 (122630) | Price: 587 | Amount: 60,968
-KODEX 코스닥150레버리지 (233740) | Price: 2,525 | Amount: 41,478
-KODEX 코스닥150 (229200) | Price: 2,022 | Amount: 39,914
-SK스퀘어 (402340) | Price: 52 | Amount: 37,453
-TIGER 반도체TOP10레버리지 (488080) | Price: 643 | Amount: 31,255
-삼성SDI (006400) | Price: 58 | Amount: 31,201
-TIGER 200 (102110) | Price: 321 | Amount: 30,492
-두산에너빌리티 (034020) | Price: 269 | Amount: 30,209
+=== Foreign Buy Top (KOSPI) [26.04.22] ===
+TIGER MSCI Korea TR (310970) | Price: 10,200 | Amount: 433,701
+이수페타시스 (007660) | Price: 1,024 | Amount: 151,845
+현대로템 (064350) | Price: 261 | Amount: 60,808
+SK스퀘어 (402340) | Price: 85 | Amount: 60,316
+한화오션 (042660) | Price: 396 | Amount: 52,930
+LG디스플레이 (034220) | Price: 3,307 | Amount: 50,801
+HJ중공업 (097230) | Price: 1,681 | Amount: 50,263
+HD현대일렉트릭 (267260) | Price: 29 | Amount: 31,376
+LIG디펜스앤에어로스페이스 (079550) | Price: 30 | Amount: 28,895
+효성중공업 (298040) | Price: 9 | Amount: 28,484
 
-=== Volume Quant Top (KOSPI) ===
-KODEX 200선물인버스2X (252670) | Price: 181 | Volume: 2,639,924,673
-KODEX 인버스 (114800) | Price: 1,394 | Volume: 260,488,168
-KODEX 2차전지산업레버리지 (462330) | Price: 2,570 | Volume: 109,750,954
-대우건설 (047040) | Price: 32,850 | Volume: 94,197,868
-삼성 인버스 2X WTI원유 선물 ETN (530036) | Price: 22 | Volume: 79,882,573
-KEC (092220) | Price: 1,418 | Volume: 49,538,431
-신성이엔지 (011930) | Price: 3,935 | Volume: 45,076,844
-진원생명과학 (011000) | Price: 1,346 | Volume: 39,153,075
-TIGER 200선물인버스2X (252710) | Price: 193 | Volume: 38,932,136
-TIGER 2차전지TOP10레버리지 (412570) | Price: 2,600 | Volume: 33,680,242
+=== Foreign Buy Top (KOSDAQ) [26.04.22] ===
+주성엔지니어링 (036930) | Price: 625 | Amount: 70,438
+미래에셋벤처투자 (100790) | Price: 597 | Amount: 34,451
+아주IB투자 (027360) | Price: 1,907 | Amount: 26,420
+서진시스템 (178320) | Price: 505 | Amount: 22,639
+하나마이크론 (067310) | Price: 347 | Amount: 13,667
+알지노믹스 (476830) | Price: 70 | Amount: 13,027
+리가켐바이오 (141080) | Price: 61 | Amount: 11,515
+펄어비스 (263750) | Price: 193 | Amount: 10,995
+유진테크 (084370) | Price: 76 | Amount: 10,006
+삼천당제약 (000250) | Price: 26 | Amount: 9,975
+
+=== Institution Buy Top (KOSPI) [26.04.22] ===
+HD현대중공업 (329180) | Price: 179 | Amount: 110,188
+HD한국조선해양 (009540) | Price: 116 | Amount: 52,901
+HD현대마린솔루션 (443060) | Price: 192 | Amount: 44,117
+KODEX 2차전지산업레버리지 (462330) | Price: 13,106 | Amount: 33,921
+삼성중공업 (010140) | Price: 1,073 | Amount: 33,654
+NC (036570) | Price: 98 | Amount: 26,922
+LG이노텍 (011070) | Price: 55 | Amount: 26,899
+한화솔루션 (009830) | Price: 564 | Amount: 26,620
+삼아알미늄 (006110) | Price: 324 | Amount: 24,004
+TIGER 반도체TOP10레버리지 (488080) | Price: 472 | Amount: 23,982
+
+=== Volume Quant Top (KOSPI) [2026-04-22] ===
+KODEX 200선물인버스2X (252670) | Price: 181 | Volume: 2,218,831,946
+KODEX 인버스 (114800) | Price: 1,391 | Volume: 201,533,914
+삼성 인버스 2X WTI원유 선물 ETN (530036) | Price: 21 | Volume: 104,127,382
+조일알미늄 (018470) | Price: 1,874 | Volume: 98,537,015
+KODEX 2차전지산업레버리지 (462330) | Price: 2,635 | Volume: 89,427,941
+KEC (092220) | Price: 1,843 | Volume: 82,811,188
+신성이엔지 (011930) | Price: 4,130 | Volume: 67,853,756
+남선알미늄 (008350) | Price: 2,425 | Volume: 59,184,639
+TIGER 2차전지TOP10레버리지 (412570) | Price: 2,665 | Volume: 36,438,224
+TIGER 200선물인버스2X (252710) | Price: 190 | Volume: 28,838,524

@@ -36,6 +36,19 @@ if sys.platform == "win32":
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 # ─────────────────────────────────────────
+# 워크플로우 섹터 키워드 → 네이버 업종 실명 매핑
+# (네이버 업종명에 없는 키워드 사용 시 이 테이블로 변환)
+# ─────────────────────────────────────────
+SECTOR_ALIAS: dict[str, list[str]] = {
+    "AI인프라":   ["반도체", "전자부품", "기술하드웨어"],
+    "전력설비":   ["전기장비", "전기전자부품"],
+    "원전/SMR":   ["에너지장비및서비스"],
+    "방산":       ["우주항공과국방"],
+    "조선":       ["조선"],
+    "AI":         ["반도체", "소프트웨어", "IT서비스"],
+}
+
+# ─────────────────────────────────────────
 # 설정값 (워크플로우 2단계 기준)
 # ─────────────────────────────────────────
 FILTER = {
@@ -122,7 +135,7 @@ def fetch_naver_finance(ticker: str) -> dict | None:
 
         bps = safe_float(df.iloc[ROW_MAP["BPS"], 3])
 
-        return {
+        result = {
             "ROE":        roe,
             "영업이익률": op_margin,
             "부채비율":   debt_ratio,
@@ -134,6 +147,15 @@ def fetch_naver_finance(ticker: str) -> dict | None:
             "매출_추이":  rev_list,
             "영업익_추이": op_list,
         }
+
+        # ── 정합성 검증: 재무 테이블 파싱 오류 차단 ──
+        # 잘못된 테이블 행을 읽으면 ROE·영업이익률이 비현실적으로 커짐
+        if roe        is not None and abs(roe)        > 500:   return None
+        if op_margin  is not None and abs(op_margin)  > 100:   return None
+        if debt_ratio is not None and debt_ratio      < 0:     return None
+        if debt_ratio is not None and debt_ratio      > 5000:  return None
+
+        return result
     except Exception:
         return None
 
@@ -297,17 +319,30 @@ def get_ticker_list(sector_keyword: str = None) -> list[tuple[str, str]]:
         print(f"[Genesis Scan] 네이버 증권 업종에서 '{sector_keyword}' 검색 중...")
         sectors = fetch_naver_sectors()
 
-        matched = [(no, name) for no, name in sectors
-                   if sector_keyword in name]
+        # 1순위: SECTOR_ALIAS 매핑 (AI인프라·전력설비·원전SMR 등 워크플로우 전용 키워드)
+        alias_keywords = SECTOR_ALIAS.get(sector_keyword, [])
+        matched = []
+        if alias_keywords:
+            for alias in alias_keywords:
+                matched += [(no, name) for no, name in sectors if alias in name]
+            matched = list(dict.fromkeys(matched))  # 중복 제거·순서 유지
+            if matched:
+                print(f"  [별칭 매핑] '{sector_keyword}' → {alias_keywords}")
 
+        # 2순위: 업종명에 키워드 포함 (정확한 부분 문자열 매칭)
         if not matched:
-            # 부분 매치 재시도 (앞 2글자)
-            matched = [(no, name) for no, name in sectors
-                       if any(c in name for c in sector_keyword)]
+            matched = [(no, name) for no, name in sectors if sector_keyword in name]
+
+        # 3순위: 2글자 이상 연속 부분 문자열 매칭 (글자 하나씩 매칭 금지)
+        if not matched and len(sector_keyword) >= 2:
+            sub = sector_keyword[:2]
+            matched = [(no, name) for no, name in sectors if sub in name]
+            if matched:
+                print(f"  [2글자 매칭] '{sub}' 기준")
 
         if not matched:
             print(f"\n  [!] '{sector_keyword}'에 해당하는 업종을 찾지 못했습니다.")
-            print("  네이버 증권 업종 목록:")
+            print(f"  SECTOR_ALIAS 테이블에 등록하거나 아래 업종명을 직접 사용하세요:")
             for no, name in sectors:
                 print(f"    no={no:>4}  {name}")
             return []

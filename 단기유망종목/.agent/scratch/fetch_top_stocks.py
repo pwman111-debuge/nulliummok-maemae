@@ -60,8 +60,8 @@ def parse_investor_rank(html, label):
     )
 
     lines = [f"=== {label} [{target_date}] ==="]
-    for code, name, price, amount in items[:10]:
-        lines.append(f"{name.strip()} ({code}) | Price: {price} | Amount: {amount}")
+    for code, name, qty, amount in items[:10]:
+        lines.append(f"{name.strip()} ({code}) | 수량(천주): {qty} | 금액(백만원): {amount}")
     return lines
 
 
@@ -93,7 +93,7 @@ def fetch_data():
     )
     results.append(f"=== Volume Quant Top (KOSPI) [{today_str}] ===")
     for code, name, price, volume in items[:10]:
-        results.append(f"{name.strip()} ({code}) | Price: {price} | Volume: {volume}")
+        results.append(f"{name.strip()} ({code}) | 현재가: {price} | 거래량: {volume}")
 
     output_path = os.path.join(SCRIPT_DIR, 'stocks_data.txt')
     with open(output_path, 'w', encoding='utf-8') as f:

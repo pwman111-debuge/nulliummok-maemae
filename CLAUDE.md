@@ -102,6 +102,22 @@ python 장기유망종목/skills/genesis-quant-skill/scripts/gene-scan.py --sect
 
 ---
 
+## GitHub 동기화 원칙
+
+**저장소**: `https://github.com/pwman111-debuge/nulliummok-maemae.git` (remote: `nulliummok`)
+
+- `workflows/`, `skills/`, `단기유망종목/`, `중기유망종목/`, `장기유망종목/` 내 **스크립트·워크플로우 파일을 수정·보완한 경우** → 작업 완료 후 반드시 `git push nulliummok main` 으로 반영
+- 발굴 리포트(`workflows/reports/YYYYMMDD_발굴리포트.md`) 및 캐시 파일(`workflows/.cache/YYYYMMDD_*.txt`, `*.json`)도 생성 후 함께 커밋·푸시
+- 푸시 전 `git status`로 누락 파일 확인 후 스테이징
+
+```bash
+git add <수정된 파일들>
+git commit -m "fix: 수정 내용 요약"
+git push nulliummok main
+```
+
+---
+
 ## 발굴 원칙
 
 1. **데이터 출처: 네이버 증권 단독** — DART·증권사·타 포털 금지

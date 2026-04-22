@@ -66,6 +66,7 @@
 [STEP 3] 후보 풀 수집 (병렬)
          단기 5~7종목 / 중기 5~7종목 / 장기 5~8종목
          → workflows/.cache/YYYYMMDD_short.txt 등 임시 저장
+         ⚠️ 수급 스크립트 출력 첫 줄 날짜 반드시 확인 (당일 YY.MM.DD 일치 여부)
          ↓
 [STEP 4] 눌림목 건강도 스코어링
          python workflows/skills/pullback-scorer/pullback_score.py <codes...> --json
@@ -75,9 +76,6 @@
          ↓
 [STEP 6] 최종 리포트 생성
          → workflows/reports/YYYYMMDD_발굴리포트.md
-         ↓
-[STEP 7] 구글 닥스 자동 전송 (황원장 수신)
-         → Google Drive에 문서 생성 후 pwman111@gmail.com 공유
 ```
 
 ---
@@ -112,28 +110,6 @@ python 장기유망종목/skills/genesis-quant-skill/scripts/gene-scan.py --sect
 4. **중복 종목** — 단/중/장 풀 동시 등장 시 점수가 가장 높은 기간에만 배치
 5. **배제 조건 해당 종목** — 본문 제외, 부록에만 기재
 6. **우팀장이 전권을 가지고 보고서를 완성한다** — Claude는 우팀장 지시에 따라 완전한 보고서를 작성·확정한다
-
----
-
-## 구글 닥스 자동 전송 (STEP 7)
-
-리포트 생성 완료 후 **반드시 자동 실행**한다.
-
-| 항목 | 내용 |
-|------|------|
-| **수신자** | 황원장 — pwman111@gmail.com |
-| **문서 제목** | `YYYYMMDD 눌림목 발굴리포트` |
-| **내용** | `workflows/reports/YYYYMMDD_발굴리포트.md` 전문 |
-| **공유 권한** | 댓글 가능 (Commenter) |
-
-### 실행 순서
-
-1. `workflows/reports/YYYYMMDD_발굴리포트.md` 파일 내용 읽기
-2. Google Drive MCP `create_file` 로 Google Docs 문서 생성
-3. 생성된 파일에 pwman111@gmail.com 공유 설정
-4. 공유 링크를 채팅창에 출력 → 우팀장 확인
-
-> **주의**: Google Drive MCP 오류 시 공유 링크 대신 파일 경로만 출력하고 수동 업로드 안내
 
 ---
 

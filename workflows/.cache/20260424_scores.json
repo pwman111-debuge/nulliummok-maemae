@@ -1,0 +1,20 @@
+[
+  {"code":"012450","name":"한화에어로스페이스","current_price":1451000,"pullback_pct":-7.58,"pullback_days":6,"closest_ma":"20일선","closest_ma_dist_pct":0.77,"vol_ratio":86.07,"rise_20d_pct":29.0,"total":80,"grade":"A","eligible":true},
+  {"code":"101490","name":"에스앤에스텍","current_price":104700,"pullback_pct":-3.41,"pullback_days":5,"closest_ma":"5일선","closest_ma_dist_pct":1.61,"vol_ratio":67.09,"rise_20d_pct":43.8,"hit_52w_high":true,"total":77,"grade":"A","eligible":true},
+  {"code":"183300","name":"코미코","current_price":151600,"pullback_pct":-6.54,"pullback_days":3,"closest_ma":"5일선","closest_ma_dist_pct":0.0,"vol_ratio":65.26,"rise_20d_pct":65.5,"hit_52w_high":true,"total":77,"grade":"A","eligible":true},
+  {"code":"095610","name":"테스","current_price":89400,"pullback_pct":-5.89,"pullback_days":7,"closest_ma":"5일선","closest_ma_dist_pct":0.93,"vol_ratio":86.81,"rise_20d_pct":76.9,"hit_52w_high":true,"total":72,"grade":"A","eligible":true},
+  {"code":"005930","name":"삼성전자","current_price":219250,"pullback_pct":-4.47,"pullback_days":1,"closest_ma":"5일선","closest_ma_dist_pct":0.14,"vol_ratio":44.61,"rise_20d_pct":37.4,"hit_52w_high":true,"total":67,"grade":"B","eligible":true},
+  {"code":"402340","name":"SK스퀘어","current_price":733000,"pullback_pct":-4.43,"pullback_days":1,"closest_ma":"5일선","closest_ma_dist_pct":1.81,"vol_ratio":33.60,"rise_20d_pct":66.7,"hit_52w_high":true,"total":67,"grade":"B","eligible":true},
+  {"code":"000660","name":"SK하이닉스","current_price":1220000,"pullback_pct":-3.71,"pullback_days":1,"closest_ma":"5일선","closest_ma_dist_pct":0.69,"vol_ratio":35.50,"rise_20d_pct":57.2,"hit_52w_high":true,"total":67,"grade":"B","eligible":true},
+  {"code":"083450","name":"GST","current_price":43900,"pullback_pct":-6.20,"pullback_days":1,"closest_ma":"5일선","closest_ma_dist_pct":0.41,"vol_ratio":46.15,"rise_20d_pct":92.2,"hit_52w_high":true,"total":67,"grade":"B","eligible":true},
+  {"code":"036930","name":"주성엔지니어링","current_price":118600,"pullback_pct":-6.10,"pullback_days":2,"closest_ma":"5일선","closest_ma_dist_pct":4.84,"vol_ratio":55.32,"rise_20d_pct":114.2,"hit_52w_high":true,"total":62,"grade":"B","eligible":true},
+  {"code":"319660","name":"피에스케이","current_price":90400,"pullback_pct":-2.27,"pullback_days":7,"closest_ma":"5일선","closest_ma_dist_pct":5.07,"vol_ratio":76.21,"rise_20d_pct":25.0,"hit_52w_high":true,"total":62,"grade":"B","eligible":true},
+  {"code":"062040","name":"산일전기","current_price":223500,"pullback_pct":-2.83,"pullback_days":0,"closest_ma":"5일선","closest_ma_dist_pct":6.02,"vol_ratio":46.36,"rise_20d_pct":75.6,"hit_52w_high":true,"total":57,"grade":"B","eligible":true},
+  {"code":"058470","name":"리노공업","current_price":125200,"pullback_pct":-2.95,"pullback_days":1,"closest_ma":"5일선","closest_ma_dist_pct":3.68,"vol_ratio":71.02,"rise_20d_pct":36.9,"hit_52w_high":true,"total":57,"grade":"B","eligible":true},
+  {"code":"010140","name":"삼성중공업","current_price":33900,"total":0,"grade":"✕","eligible":false,"disqualified_reasons":["거래량 급증 138% (투매 의심)"]},
+  {"code":"403870","name":"HPSP","current_price":53500,"total":0,"grade":"✕","eligible":false,"disqualified_reasons":["이평선 역배열 (20일 < 60일)","거래량 급증 190% (투매 의심)"]},
+  {"code":"267260","name":"HD현대일렉트릭","current_price":1256000,"total":0,"grade":"✕","eligible":false,"disqualified_reasons":["거래량 급증 136% (투매 의심)"]},
+  {"code":"298040","name":"효성중공업","current_price":3552000,"total":0,"grade":"✕","eligible":false,"disqualified_reasons":["거래량 급증 124% (투매 의심)"]},
+  {"code":"010120","name":"LS ELECTRIC","current_price":230500,"total":0,"grade":"✕","eligible":false,"disqualified_reasons":["거래량 급증 124% (투매 의심)"]},
+  {"code":"090430","name":"아모레퍼시픽","current_price":141300,"total":0,"grade":"✕","eligible":false,"disqualified_reasons":["이평선 역배열 (20일 < 60일)","조정 기간 16일 (≥16)"]}
+]

@@ -255,7 +255,8 @@ def score_stock(code: str) -> PullbackScore:
         score.eligible = False
         score.disqualified_reasons.append(f"조정 기간 {score.pullback_days}일 (≥16)")
 
-    if score.vol_ratio > 120:
+    # pullback_days==0(신고점 당일)은 조정 구간이 없으므로 투매 판단 불가 → 스킵
+    if score.pullback_days > 0 and score.vol_ratio > 120:
         score.eligible = False
         score.disqualified_reasons.append(f"거래량 급증 {score.vol_ratio:.0f}% (투매 의심)")
 
